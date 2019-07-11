@@ -1,3 +1,18 @@
-.navbar {
-	color: blue;
+@import '../../Styles/variables';
+
+nav {
+	background-color: transparent !important;
+	box-shadow: none;
+	position: fixed;
+	z-index: 10;
+}
+
+.active {
+	color: $primary_black;
+}
+
+ul.nav_menu > li > a {
+	color: $secondary_black;
+	font-family: $roboto_condensed;
+	font-size: 17px;
 }

@@ -1,15 +1,16 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
+import './App.scss';
 
-import Navbar from './Components/Navbar/Navbar'
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
 	return (
-		<>
+		<Fragment>
 			<Navbar />
 
-			<div>hello worlds</div>
-		</>
+			<Home />
+		</Fragment>
 	);
 }
 
