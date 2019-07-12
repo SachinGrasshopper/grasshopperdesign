@@ -5,9 +5,13 @@ import './navbar.scss';
 export default function Navbar() {
 	return (
 		<nav>
-			<div className="container">
-				<NavLink to="/" className="left">
-					<img src={process.env.PUBLIC_URL + '/assets/images/logo/logo.png'} alt="Company Logo" />
+			<div className="container" style={{ height: 'inherit' }}>
+				<NavLink to="/" className="left valign-wrapper" style={{ height: '100%' }}>
+					<img
+						src={process.env.PUBLIC_URL + '/assets/images/logo/logo.png'}
+						alt="Company Logo"
+						style={{ width: '100px' }}
+					/>
 				</NavLink>
 
 				<ul className="nav_menu right hide-on-med-and-down">
