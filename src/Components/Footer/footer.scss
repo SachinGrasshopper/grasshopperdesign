@@ -5,3 +5,14 @@
 	background-color: $primary_black;
 	font-family: $roboto_slab;
 }
+
+.follow_links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	.follow_sec {
+		padding: 1em 1em 0;
+		width: 300px;
+	}
+}

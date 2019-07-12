@@ -91,6 +91,76 @@ export default function Home() {
 				</div>
 			</section>
 
+			<section className="sec2">
+				<video
+					src={process.env.PUBLIC_URL + '/assets/videos/video.mp4'}
+					autoPlay
+					muted
+					loop
+					style={{ height: '100%' }}
+				/>
+
+				<div className="video_front_layer valign-wrapper">
+					<div className="container">
+						<p className="video_tag gh_white_txt center hide-on-small-only">
+							IMAGINATIVE DESIGN
+							<span className="gh_green_txt" style={{ padding: '0 5px' }}>
+								+
+							</span>
+							STRATEGY
+							<span className="gh_green_txt" style={{ padding: '0 5px' }}>
+								+
+							</span>
+							ENACT
+						</p>
+						<div className="video_tag center gh_white_txt hide-on-med-and-up">
+							<p className="no-margin">IMAGINATIVE DESIGN</p>
+							<p className="gh_green_txt no-margin">+</p>
+							<p className="no-margin">STRATEGY</p>
+							<p className="gh_green_txt no-margin">+</p>
+							<p className="no-margin">ENACT</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section className="sec3">
+				<div className="container">
+					<img
+						src={process.env.PUBLIC_URL + '/assets/images/logo/namaste.png'}
+						alt="Namaste"
+						className="img-fit-with-width"
+					/>
+
+					<div className="gh_white_txt">
+						<p>
+							<span className="gh_green_txt">GRASSHOPPER Design Pvt.</span> Ltd is a creative design
+							agency. We only concentrate on infinite creativity. We are experts in our respected fields,
+							sitting under one umbrella with only one aim i.e. to{' '}
+							<span className="gh_green_txt">"Supercharge Brands"</span>.
+						</p>
+						<p>
+							The world is full of sensible brands doing sensible things that nobody ever notices
+							sometimes. We’re here to inject brands with an infectious energy. We help them their purpose
+							and voice with a <span className="gh_green_txt">creative leap</span>.
+						</p>
+						<p>
+							We honestly look at your brand and your business needs. Brand first thinking: it means you
+							get consistency across media, genuine integration and the creative work you need, by which
+							your business grows to a greater level. When we join hands with you, our entire creative
+							team is on a mission to make a different shape of work, partnering with the worlds most
+							ambitious brands to play meaningful role in culture.
+						</p>
+						<p>
+							Our thinking process and strategy always indulge into creating more out of the box
+							creativity than just simple adverts. We always believe that an idea should work hardest
+							where it will have the biggest influence on your business.
+						</p>
+						<p>Because we always believe if you grow, we will also grow...</p>
+					</div>
+				</div>
+			</section>
+
 			<section
 				className="sec4"
 				style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/logo/mission_bg.png)` }}

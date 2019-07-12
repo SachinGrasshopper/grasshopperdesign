@@ -1,3 +1,5 @@
+@import './variables';
+
 .no-margin {
 	margin: 0 !important;
 }
@@ -37,4 +39,15 @@
 .img-fit-with-width {
 	width: 100%;
 	height: auto;
+}
+
+// -- color classes
+.gh_green_txt {
+	color: $gh_green;
+}
+.gh_white_txt {
+	color: white;
+}
+.gh_secondary_black_txt {
+	color: $secondary_black;
 }

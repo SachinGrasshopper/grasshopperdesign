@@ -12,7 +12,7 @@ export default function Footer() {
 				<p
 					className="center"
 					style={{
-						margin: '1em auto auto auto',
+						margin: '1em auto 1em',
 						maxWidth: '600px',
 						color: '#707070',
 						fontSize: '2em'
@@ -20,6 +20,42 @@ export default function Footer() {
 				>
 					Creating brands that are truthful, innovative and beautifull
 				</p>
+
+				<div className="follow_links">
+					<div className="follow_sec">
+						<div className="follow_link_heading">
+							<p className="no-margin gh_secondary_black_txt" style={{ fontWeight: 'bold' }}>
+								Friendly Visit
+							</p>
+							<hr style={{ border: '2px solid #95d600', width: '50px', margin: '5px 0 0 0' }} />
+						</div>
+						<div>
+							<p className="gh_secondary_black_txt">
+								#47, First Floor, 2nd Main, JP Nagar 8th Phase, Jambusavari Dinne Bengaluru - 560 076
+							</p>
+						</div>
+					</div>
+
+					<div className="follow_sec">
+						<div className="follow_link_heading">
+							<p className="no-margin gh_secondary_black_txt" style={{ fontWeight: 'bold' }}>
+								Contact Us
+							</p>
+							<hr style={{ border: '2px solid #95d600', width: '50px', margin: '5px 0 0 0' }} />
+						</div>
+						<p className="gh_secondary_black_txt">info@grasshopperdesign.in</p>
+					</div>
+
+					<div className="follow_sec">
+						<div className="follow_link_heading">
+							<p className="no-margin gh_secondary_black_txt" style={{ fontWeight: 'bold' }}>
+								Follow Us
+							</p>
+							<hr style={{ border: '2px solid #95d600', width: '50px', margin: '5px 0 0 0' }} />
+						</div>
+						<p className="gh_secondary_black_txt">info@grasshopperdesign.in</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
