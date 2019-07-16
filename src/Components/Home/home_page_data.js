@@ -257,6 +257,26 @@ export const client_images_data2 = [
 	{
 		imgname: '30.png',
 		alt: 'Briyas'
+	},
+	{
+		imgname: '1.png',
+		alt: 'Sangeetha'
+	},
+	{
+		imgname: '2.png',
+		alt: 'Nagarjuna Ayurveda'
+	},
+	{
+		imgname: '4.png',
+		alt: 'Kallada Software Service'
+	},
+	{
+		imgname: '3.png',
+		alt: 'Praneetha'
+	},
+	{
+		imgname: '5.png',
+		alt: 'Sajaas Design Boutique'
 	}
 ];
 

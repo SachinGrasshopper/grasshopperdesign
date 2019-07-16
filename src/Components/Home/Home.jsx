@@ -1,48 +1,11 @@
 import React, { Fragment } from 'react';
 import './home.scss';
 
+import { publicpath } from '../../Helpers/publicpath';
 import { best_at_data } from './home_page_data';
 import ClientImageSlider from './ClientImageSlider';
 
 export default function Home() {
-	// const [ state, setState ] = useState({
-	// 	// client_images_data,
-	// 	slide_num: 1
-	// 	// total_images: Object.keys(client_images_data).length
-	// });
-
-	// console.log(_.concat(Object.values(client_images_data)));
-
-	// const increment_slide_num = () => {
-	// 	let temp = state.slide_num + 1;
-	// 	if (temp <= state.total_images) {
-	// 		setState({
-	// 			...state,
-	// 			slide_num: state.slide_num + 1
-	// 		});
-	// 	} else {
-	// 		setState({
-	// 			...state,
-	// 			slide_num: 1
-	// 		});
-	// 	}
-	// };
-
-	// const decrement_slide_num = () => {
-	// 	let temp = state.slide_num - 1;
-	// 	if (temp >= 1) {
-	// 		setState({
-	// 			...state,
-	// 			slide_num: state.slide_num - 1
-	// 		});
-	// 	} else {
-	// 		setState({
-	// 			...state,
-	// 			slide_num: state.total_images
-	// 		});
-	// 	}
-	// };
-
 	return (
 		<Fragment>
 			<section className="sec1">
@@ -57,43 +20,18 @@ export default function Home() {
 								<p className="no-margin" style={{ color: '#707070' }}>
 									Trusted By
 								</p>
-
-								{/* <hr style={{ border: '1px solid #d2d2d2', width: '70px', marginLeft: '15px' }} /> */}
 							</div>
 
 							<div
-								className="valign-wrapper hide-on-med-and-down"
+								className="hide-on-med-and-down"
 								style={{
-									justifyContent: 'space-around',
 									position: 'relative',
 									height: 'inherit',
 									width: '100%'
 								}}
 							>
 								<ClientImageSlider />
-
-								{/* <div className="client_img_controls">
-									<div style={{ top: '20%' }}>
-										<span className="valign-wrapper" onClick={increment_slide_num}>
-											<i className="material-icons">keyboard_arrow_up</i>
-										</span>
-									</div>
-									<div style={{ bottom: '20%' }}>
-										<span className="valign-wrapper" onClick={decrement_slide_num}>
-											<i className="material-icons">keyboard_arrow_down</i>
-										</span>
-									</div>
-								</div> */}
 							</div>
-
-							{/* <div
-								className="valign-wrapper hide-on-med-and-up"
-								style={{
-									justifyContent: 'space-around',
-									position: 'relative',
-									height: 'inherit'
-								}}
-							/> */}
 						</div>
 					</div>
 				</div>
@@ -101,11 +39,11 @@ export default function Home() {
 
 			<section className="sec2">
 				<video
-					src={process.env.PUBLIC_URL + '/assets/videos/video.mp4'}
+					src={publicpath + '/assets/videos/video.mp4'}
 					autoPlay
 					muted
 					loop
-					style={{ height: '100%' }}
+					style={{ position: 'absolute' }}
 				/>
 
 				<div className="video_front_layer valign-wrapper">
@@ -135,7 +73,7 @@ export default function Home() {
 			<section className="sec3">
 				<div className="container">
 					<img
-						src={process.env.PUBLIC_URL + '/assets/images/logo/namaste.png'}
+						src={publicpath + '/assets/images/logo/namaste.png'}
 						alt="Namaste"
 						className="img-fit-with-width"
 					/>
@@ -144,7 +82,7 @@ export default function Home() {
 						<p>
 							<span className="gh_green_txt">GRASSHOPPER Design Pvt.</span> Ltd is a creative design
 							agency. We only concentrate on infinite creativity. We are experts in our respected fields,
-							sitting under one umbrella with only one aim i.e. to{' '}
+							sitting under one umbrella with only one aim i.e. to
 							<span className="gh_green_txt">"Supercharge Brands"</span>.
 						</p>
 						<p>
@@ -171,7 +109,7 @@ export default function Home() {
 
 			<section
 				className="sec4"
-				style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/logo/mission_bg.png)` }}
+				style={{ backgroundImage: `url(${publicpath}/assets/images/logo/mission_bg.png)` }}
 			>
 				<div className="sec4_div">
 					<div className="container">
@@ -197,7 +135,7 @@ export default function Home() {
 								<p>
 									We appreciate that every client and project is unique and a one size fits all
 									solution just doesn’t work, we therefore take time to get to know our clients, their
-									target markets and ambitions for their design and branding projects.{' '}
+									target markets and ambitions for their design and branding projects.
 								</p>
 								<p className="no-margin">
 									This discovery process ensures what we design and build is perfectly positioned and
@@ -222,7 +160,7 @@ export default function Home() {
 							<div className="best_at" key={index}>
 								<div className="best_at_icon">
 									<img
-										src={`${process.env.PUBLIC_URL}/assets/images/logo/${e.img}`}
+										src={`${publicpath}/assets/images/logo/${e.img}`}
 										alt={e.name}
 										className="img-fit-with-height"
 									/>

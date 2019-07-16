@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.scss';
+import { publicpath } from '../../Helpers/publicpath';
 
 export default function Navbar() {
 	return (
@@ -8,7 +9,7 @@ export default function Navbar() {
 			<div className="container" style={{ height: 'inherit' }}>
 				<NavLink to="/" className="left valign-wrapper" style={{ height: '100%' }}>
 					<img
-						src={process.env.PUBLIC_URL + '/assets/images/logo/logo.png'}
+						src={publicpath + '/assets/images/logo/logo.png'}
 						alt="Company Logo"
 						style={{ width: '100px' }}
 					/>

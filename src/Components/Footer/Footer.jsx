@@ -57,6 +57,10 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
+
+			<p className="no-margin center" style={{ color: '#707070', paddingTop: '2em' }}>
+				CopyRight @ GrasshopperDesign Pvt. Ltd. {new Date().getFullYear()}
+			</p>
 		</div>
 	);
 }
