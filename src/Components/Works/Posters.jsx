@@ -2,12 +2,11 @@ import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
 import './works.scss';
 
-const vb_path = publicpath + '/assets/images/vehicle_branding/';
-const standies_path = publicpath + '/assets/images/standies/';
+const poster_path = publicpath + '/assets/images/poster/';
 
-export default function VehicleBranding() {
+export default function Posters() {
 	return (
-		<section style={{ paddingTop: '8em' }} className="works_sec_container">
+		<section className="works_sec_container" style={{ paddingTop: '8em' }}>
 			<div className="container">
 				<div className="row no-margin-bottom" style={{ position: 'relative' }}>
 					<div className="col s12 m4 l4 custom_padding hide-on-small-only">
@@ -23,10 +22,13 @@ export default function VehicleBranding() {
 								alignItems: 'flex-end'
 							}}
 						>
-							<div>
+							<div style={{ width: '100%' }}>
 								<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
-								<h5 className="gh_secondary_black_txt font_roboto_slab_bold">
-									Vehicle Branding / Standees
+								<h5
+									className="gh_secondary_black_txt font_roboto_slab_bold"
+									style={{ wordBreak: 'break-word' }}
+								>
+									Posters
 								</h5>
 							</div>
 						</div>
@@ -41,55 +43,47 @@ export default function VehicleBranding() {
 								left: 0
 							}}
 						>
-							<img src={standies_path + '3.png'} className="img-fit-with-width" alt="" />
+							<img src={poster_path + 'ss.png'} className="img-fit-with-width" alt="" />
 						</div>
 					</div>
 
 					<div className="col s12 hide-on-med-and-up custom_padding">
 						<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
-						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Corporate Identity</h5>
+						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Posters</h5>
 					</div>
 
 					<div className="col s12 hide-on-med-and-up custom_padding">
-						<img src={standies_path + '3.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + 'sss.png'} className="img-fit-with-width" alt="" />
 					</div>
 
 					<div className="col s12 m8 l8 custom_padding">
-						<img src={vb_path + '7.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '1.png'} className="img-fit-with-width" alt="" />
 					</div>
 				</div>
 
 				<div className="row">
 					<div className="col s4 custom_padding">
-						<img src={vb_path + '1.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '2.png'} alt="" className="img-fit-with-width" />
 					</div>
 
 					<div className="col s4 custom_padding">
-						<img src={vb_path + '2.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '3.png'} alt="" className="img-fit-with-width" />
 					</div>
 
 					<div className="col s4 custom_padding">
-						<img src={vb_path + '3.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '4.png'} alt="" className="img-fit-with-width" />
 					</div>
 
 					<div className="col s4 custom_padding">
-						<img src={vb_path + '4.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '5.png'} alt="" className="img-fit-with-width" />
 					</div>
 
 					<div className="col s4 custom_padding">
-						<img src={vb_path + '5.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '6.png'} alt="" className="img-fit-with-width" />
 					</div>
 
 					<div className="col s4 custom_padding">
-						<img src={vb_path + '6.png'} className="img-fit-with-width" alt="" />
-					</div>
-
-					<div className="col s6 custom_padding">
-						<img src={standies_path + '1.png'} className="img-fit-with-width" alt="" />
-					</div>
-
-					<div className="col s6 custom_padding">
-						<img src={standies_path + '2.png'} className="img-fit-with-width" alt="" />
+						<img src={poster_path + '7.png'} alt="" className="img-fit-with-width" />
 					</div>
 				</div>
 			</div>

@@ -21,8 +21,28 @@ export default function Navbar() {
 							Home
 						</NavLink>
 					</li>
-					<li>
-						<NavLink to="/">Works</NavLink>
+					<li className="dropdown_btn">
+						Works
+						<ul className="nav_dropdown">
+							<li>
+								<NavLink to="/works/corporateidentity">Corporate Identity</NavLink>
+							</li>
+							<li>
+								<NavLink to="/works/vehiclebranding">Vehicle Branding</NavLink>
+							</li>
+							<li>
+								<NavLink to="/works/packaging">Packaging</NavLink>
+							</li>
+							<li>
+								<NavLink to="/works/posters">Posters</NavLink>
+							</li>
+							<li>
+								<NavLink to="/works/artworks">Artworks</NavLink>
+							</li>
+							<li>
+								<NavLink to="/works/uiux">UIUX</NavLink>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>

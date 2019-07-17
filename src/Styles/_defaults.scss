@@ -51,3 +51,26 @@
 .gh_secondary_black_txt {
 	color: $secondary_black;
 }
+
+// -- Font Classes
+.font_roboto {
+	font-family: $roboto;
+}
+.font_roboto_slab {
+	font-family: $roboto_slab;
+}
+.font_roboto_condensed {
+	font-family: $roboto_condensed;
+}
+.font_roboto_bold {
+	font-family: $roboto;
+	font-weight: bold;
+}
+.font_roboto_slab_bold {
+	font-family: $roboto_slab;
+	font-weight: bold;
+}
+.font_roboto_condensed_bold {
+	font-family: $roboto_condensed;
+	font-weight: bold;
+}
