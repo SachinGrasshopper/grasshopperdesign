@@ -23,23 +23,23 @@ ul.nav_menu > li > a {
 	position: relative;
 	cursor: pointer;
 
-	&:hover ul.nav_dropdown {
-		display: inline-block;
-		opacity: 1;
-		transition: all 0.4s ease-in-out;
-		top: 64px;
-	}
+	// &:hover ul.nav_dropdown {
+	// 	display: inline-block;
+	// 	opacity: 1;
+	// 	transition: opacity 0.4s ease-in-out;
+	// 	top: 64px;
+	// }
 }
 
 ul.nav_dropdown {
 	background-color: white;
-	transition: all 0.4s ease-in-out;
-	display: none;
-	opacity: 0;
+	// transition: opacity 0.4s ease-in-out;
+	// display: none;
+	// opacity: 0;
 	position: absolute;
 	right: 0;
 	width: 200px;
-	top: 60px;
+	// top: 60px;
 	padding: 1em 0;
 	border-radius: 5px;
 	box-shadow: 0px 3px 8px 3px rgba(142, 142, 142, 0.12);
@@ -58,4 +58,43 @@ ul.nav_dropdown {
 			}
 		}
 	}
+}
+
+// -- Mobile mode navbar styles
+.mobile_navbar_container {
+	background-color: $primary_black;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	flex-flow: column;
+
+	.menu_links {
+		flex-grow: 1;
+		& > ul {
+			width: 100%;
+			& > li {
+				font-size: 1.2em;
+				color: #fff;
+				margin: 1em 0;
+				& > a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.mobile_navbar {
+	border: 1px solid white;
+	height: 50px;
+}
+
+.mobile_menu_close_btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: $secondary_black;
+	padding: 0;
 }

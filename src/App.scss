@@ -1,1 +1,9 @@
 @import './Styles/defaults';
+
+button {
+	border: none;
+	background-color: transparent;
+	&:focus {
+		background-color: transparent !important;
+	}
+}

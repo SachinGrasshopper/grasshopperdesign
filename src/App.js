@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import './App.scss';
 
 import { Switch, Route } from 'react-router-dom';
@@ -12,11 +12,43 @@ import Packaging from './Components/Works/Packaging';
 import Posters from './Components/Works/Posters';
 import Artworks from './Components/Works/Artworks';
 import Uiux from './Components/Works/Uiux';
+import MobileNavbar from './Components/Navbar/MobileNavbar';
+import { Transition } from 'react-spring/renderprops';
 
 function App() {
+	const [ state, setstate ] = useState({
+		showMobileNavbar: false
+	});
+
 	return (
 		<Fragment>
-			<Navbar />
+			<Navbar
+				toggleMobileNavbar={() =>
+					setstate({
+						...state,
+						showMobileNavbar: !state.showMobileNavbar
+					})}
+			/>
+
+			<Transition
+				items={state.showMobileNavbar}
+				from={{ opacity: 0, marginTop: -10 }}
+				enter={{ opacity: 1, marginTop: 0 }}
+				leave={{ opacity: 0, marginTop: -10 }}
+			>
+				{(show) =>
+					show &&
+					((props) => (
+						<MobileNavbar
+							toggleMobileNavbar={() =>
+								setstate({
+									...state,
+									showMobileNavbar: !state.showMobileNavbar
+								})}
+							animatedprops={props}
+						/>
+					))}
+			</Transition>
 
 			<Switch>
 				<Route path="/" exact component={Home} />

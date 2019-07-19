@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 import './home.scss';
 
 import { publicpath } from '../../Helpers/publicpath';
@@ -23,7 +24,6 @@ export default function Home() {
 							</div>
 
 							<div
-								className="hide-on-med-and-down"
 								style={{
 									position: 'relative',
 									height: 'inherit',
@@ -125,8 +125,8 @@ export default function Home() {
 								<h6>VISSION</h6>
 								<p>
 									It’s important to make a good first impression and hopefully a lasting one too! by
-									understanding your company’s audience, values and goals, we produce branding and
-									design that clearly communicate your vision.
+									underimport standing your company’s audience, values and goals, we produce branding
+									and design that clearly communicate your vision.
 								</p>
 								<p className="no-margin-top">Do excellent work for excellent people…</p>
 							</div>
@@ -157,16 +157,18 @@ export default function Home() {
 
 					<div className="best_at_box">
 						{best_at_data.map((e, index) => (
-							<div className="best_at" key={index}>
-								<div className="best_at_icon">
-									<img
-										src={`${publicpath}/assets/images/logo/${e.img}`}
-										alt={e.name}
-										className="img-fit-with-height"
-									/>
+							<NavLink key={index} className="best_at_wrapper" to="/">
+								<div className="best_at">
+									<div className="best_at_icon">
+										<img
+											src={`${publicpath}/assets/images/logo/${e.img}`}
+											alt={e.name}
+											className="img-fit-with-height"
+										/>
+									</div>
+									<div className="best_at_txt">{e.name}</div>
 								</div>
-								<div className="best_at_txt">{e.name}</div>
-							</div>
+							</NavLink>
 						))}
 					</div>
 				</div>

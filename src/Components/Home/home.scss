@@ -152,26 +152,36 @@
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	.best_at {
-		width: 120px;
-		margin-bottom: 30px;
-		.best_at_icon {
-			border: 1px solid #95989a;
-			border-radius: 50%;
-			position: relative;
-			width: 100px;
-			height: 100px;
-			margin: auto;
-			overflow: hidden;
-			padding: 25px;
+	.best_at_wrapper {
+		padding: 1em;
+		border-radius: 5px;
+		transition: all 0.4s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			box-shadow: rgba(128, 128, 128, 0.12) 3px 3px 16px -2px;
+			transition: all 0.4s ease-in-out;
 		}
-		.best_at_txt {
-			color: $secondary_black;
-			position: relative;
-			width: 100%;
-			float: left;
-			text-align: center;
-			margin-top: 10px;
+		.best_at {
+			width: 120px;
+			margin-bottom: 30px;
+			.best_at_icon {
+				border: 1px solid #95989a;
+				border-radius: 50%;
+				position: relative;
+				width: 100px;
+				height: 100px;
+				margin: auto;
+				overflow: hidden;
+				padding: 25px;
+			}
+			.best_at_txt {
+				color: $secondary_black;
+				position: relative;
+				width: 100%;
+				float: left;
+				text-align: center;
+				margin-top: 10px;
+			}
 		}
 	}
 }
