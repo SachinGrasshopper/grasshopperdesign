@@ -59,7 +59,35 @@ export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 				</ul>
 			</div>
 
-			<div className="mobile_navbar" />
+			<div className="mobile_navbar_social_links valign-wrapper">
+				<div className="social_links">
+					<NavLink to="/">
+						<img
+							className="img-fit-with-height"
+							src={publicpath + '/assets/images/logo/gh_facebook.png'}
+							alt="GrasshopperDesign Pvt. Ltd. Facebook"
+						/>
+					</NavLink>
+				</div>
+				<div className="social_links">
+					<NavLink to="/">
+						<img
+							className="img-fit-with-height"
+							src={publicpath + '/assets/images/logo/gh_insta.png'}
+							alt="GrasshopperDesign Pvt. Ltd. Instagram"
+						/>
+					</NavLink>
+				</div>
+				<div className="social_links">
+					<NavLink to="/">
+						<img
+							className="img-fit-with-height"
+							src={publicpath + '/assets/images/logo/gh_linkedin.png'}
+							alt="GrasshopperDesign Pvt. Ltd. LinkedIn"
+						/>
+					</NavLink>
+				</div>
+			</div>
 		</div>
 	);
 }

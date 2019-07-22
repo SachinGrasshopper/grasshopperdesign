@@ -55,6 +55,7 @@
 			.sec1_graffiti {
 				flex-grow: 1;
 				background-color: $primary_black;
+				border-radius: 5px;
 			}
 
 			.client_icons {
@@ -64,6 +65,7 @@
 				position: relative;
 				flex-wrap: wrap;
 				flex-flow: column;
+				border-radius: 5px;
 			}
 		}
 	}
@@ -80,7 +82,7 @@
 
 .client_images {
 	height: 50px;
-	margin-right: 7em;
+	margin-right: 3em;
 }
 
 .client_img_controls {
@@ -132,6 +134,8 @@
 // -- Section 4
 .sec4 {
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	font-family: $roboto_condensed;
 
 	& > .sec4_div {
@@ -186,7 +190,8 @@
 	}
 }
 
-@media only screen and (max-width: 600px) {
+// -- Media Queries
+@media #{$small} {
 	.client_logo_slider_tag {
 		flex-grow: 1;
 		border-bottom: 1px solid #ccc;

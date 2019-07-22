@@ -16,3 +16,10 @@
 		max-width: 300px;
 	}
 }
+
+// -- Media Queries
+@media #{$small} {
+	.follow_links {
+		justify-content: flex-start;
+	}
+}

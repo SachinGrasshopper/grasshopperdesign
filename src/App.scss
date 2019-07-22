@@ -7,3 +7,12 @@ button {
 		background-color: transparent !important;
 	}
 }
+
+.social_links {
+	height: 25px;
+	margin: 0 1em;
+	& > a {
+		height: inherit;
+		display: block;
+	}
+}

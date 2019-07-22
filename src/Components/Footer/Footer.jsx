@@ -1,5 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './footer.scss';
+import { publicpath } from '../../Helpers/publicpath';
 
 export default function Footer() {
 	return (
@@ -53,7 +55,36 @@ export default function Footer() {
 							</p>
 							<hr style={{ border: '2px solid #95d600', width: '50px', margin: '5px 0 0 0' }} />
 						</div>
-						<p className="gh_secondary_black_txt">info@grasshopperdesign.in</p>
+
+						<div style={{ display: 'flex', margin: '1em 0 0 -1em' }}>
+							<div className="social_links">
+								<NavLink to="/">
+									<img
+										className="img-fit-with-height"
+										src={publicpath + '/assets/images/logo/gh_facebook.png'}
+										alt="GrasshopperDesign Pvt. Ltd. Facebook"
+									/>
+								</NavLink>
+							</div>
+							<div className="social_links">
+								<NavLink to="/">
+									<img
+										className="img-fit-with-height"
+										src={publicpath + '/assets/images/logo/gh_insta.png'}
+										alt="GrasshopperDesign Pvt. Ltd. Instagram"
+									/>
+								</NavLink>
+							</div>
+							<div className="social_links">
+								<NavLink to="/">
+									<img
+										className="img-fit-with-height"
+										src={publicpath + '/assets/images/logo/gh_linkedin.png'}
+										alt="GrasshopperDesign Pvt. Ltd. LinkedIn"
+									/>
+								</NavLink>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

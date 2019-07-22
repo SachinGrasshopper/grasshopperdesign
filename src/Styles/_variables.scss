@@ -1,12 +1,16 @@
 // -- Colors
-
 $primary_black: #212121;
 $secondary_black: #707070;
 $gh_green: #95d600;
 $whitesmoke: #fafafa;
 
 // -- Fonts
-
 $roboto_condensed: 'Roboto Condensed', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $roboto_slab: 'Roboto Slab', serif;
+
+// - Media Breakpoints
+$small: "only screen and (max-width: 600px)";
+$medium: "only screen and (max-width: 992px)";
+$large: "only screen and (min-width: 993px)";
+$extra-large: "only screen and (min-width: 1200px)";
