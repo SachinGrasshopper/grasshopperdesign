@@ -56,6 +56,11 @@ export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 							UIUX
 						</NavLink>
 					</li>
+					<li>
+						<NavLink to="/works/interiors" onClick={toggleMobileNavbar}>
+							3D Interior Design
+						</NavLink>
+					</li>
 				</ul>
 			</div>
 

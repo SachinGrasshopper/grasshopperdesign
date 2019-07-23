@@ -14,6 +14,7 @@ import Artworks from './Components/Works/Artworks';
 import Uiux from './Components/Works/Uiux';
 import MobileNavbar from './Components/Navbar/MobileNavbar';
 import { Transition } from 'react-spring/renderprops';
+import Interior from './Components/Works/Interior';
 
 function App() {
 	const [ state, setstate ] = useState({
@@ -58,6 +59,7 @@ function App() {
 				<Route path="/works/posters" exact component={Posters} />
 				<Route path="/works/artworks" exact component={Artworks} />
 				<Route path="/works/uiux" exact component={Uiux} />
+				<Route path="/works/interiors" exact component={Interior} />
 			</Switch>
 
 			<Footer />

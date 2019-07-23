@@ -66,6 +66,9 @@ export default function Navbar({ toggleMobileNavbar }) {
 											<li>
 												<NavLink to="/works/uiux">UIUX</NavLink>
 											</li>
+											<li>
+												<NavLink to="/works/interiors">3D Interior Design</NavLink>
+											</li>
 										</ul>
 									</animated.div>
 								))}
