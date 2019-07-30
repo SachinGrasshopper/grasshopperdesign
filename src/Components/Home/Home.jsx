@@ -6,10 +6,6 @@ import { publicpath } from '../../Helpers/publicpath';
 import { best_at_data } from './home_page_data';
 import ClientImageSlider from './ClientImageSlider';
 
-// export default function Home() {
-
-// }
-
 class Home extends React.Component {
 	constructor() {
 		super();
@@ -175,6 +171,8 @@ class Home extends React.Component {
 							and meticulous finishing creates inspired on brand results. We love to collaborate and work
 							regularly with private and corporate clients.
 						</p>
+
+						<h5 className="center">Our Works</h5>
 
 						<div className="best_at_box">
 							{best_at_data.map((e, index) => (

@@ -78,7 +78,7 @@ export default function Navbar({ toggleMobileNavbar }) {
 
 				<div className="right hide-on-med-and-up">
 					<button onClick={toggleMobileNavbar}>
-						<i className="material-icons">menu</i>
+						<i className="material-icons gh_white_txt">menu</i>
 					</button>
 				</div>
 			</div>
