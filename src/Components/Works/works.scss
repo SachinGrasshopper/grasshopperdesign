@@ -1,3 +1,10 @@
-.custom_padding {
+.image_wrapper {
 	padding: 0 0.20rem !important;
+	position: relative;
+
+	& > svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }

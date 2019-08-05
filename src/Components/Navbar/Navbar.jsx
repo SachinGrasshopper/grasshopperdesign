@@ -17,7 +17,12 @@ export default function Navbar({ toggleMobileNavbar }) {
 	return (
 		<nav>
 			<div className="container" style={{ height: 'inherit' }}>
-				<NavLink to="/" className="left valign-wrapper" style={{ height: '100%' }}>
+				<NavLink
+					to="/"
+					className="left valign-wrapper"
+					style={{ height: '100%' }}
+					onClick={() => setstate({ ...state, showNavDropdown: !state.showNavDropdown })}
+				>
 					<img
 						src={publicpath + '/assets/images/logo/logo.png'}
 						alt="Company Logo"
@@ -27,7 +32,9 @@ export default function Navbar({ toggleMobileNavbar }) {
 
 				<ul className="nav_menu right hide-on-med-and-down">
 					<li>
-						<NavLink to="/">Home</NavLink>
+						<NavLink to="/" onClick={() => setstate({ ...state, showNavDropdown: !state.showNavDropdown })}>
+							Home
+						</NavLink>
 					</li>
 					<li
 						className="dropdown_btn"

@@ -10,9 +10,9 @@ export default function VehicleBranding() {
 		<section style={{ paddingTop: '8em' }} className="works_sec_container">
 			<div className="container">
 				<div className="row no-margin-bottom" style={{ position: 'relative' }}>
-					<div className="col s12 m4 l4 custom_padding hide-on-small-only">
+					<div className="col s12 m4 l4 image_wrapper hide-on-small-only" style={{ position: 'unset' }}>
 						<div
-							className="custom_padding"
+							className="image_wrapper"
 							style={{
 								position: 'absolute',
 								height: '50%',
@@ -32,7 +32,7 @@ export default function VehicleBranding() {
 						</div>
 
 						<div
-							className="custom_padding"
+							className="image_wrapper"
 							style={{
 								position: 'absolute',
 								height: '50%',
@@ -45,50 +45,50 @@ export default function VehicleBranding() {
 						</div>
 					</div>
 
-					<div className="col s12 hide-on-med-and-up custom_padding">
+					<div className="col s12 hide-on-med-and-up image_wrapper">
 						<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
 						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Corporate Identity</h5>
 					</div>
 
-					<div className="col s12 hide-on-med-and-up custom_padding">
+					<div className="col s12 hide-on-med-and-up image_wrapper">
 						<img src={standies_path + '3.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s12 m8 l8 custom_padding">
+					<div className="col s12 m8 l8 image_wrapper">
 						<img src={vb_path + '7.png'} className="img-fit-with-width" alt="" />
 					</div>
 				</div>
 
 				<div className="row">
-					<div className="col s4 custom_padding">
+					<div className="col s4 image_wrapper">
 						<img src={vb_path + '1.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s4 custom_padding">
+					<div className="col s4 image_wrapper">
 						<img src={vb_path + '2.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s4 custom_padding">
+					<div className="col s4 image_wrapper">
 						<img src={vb_path + '3.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s4 custom_padding">
+					<div className="col s4 image_wrapper">
 						<img src={vb_path + '4.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s4 custom_padding">
+					<div className="col s4 image_wrapper">
 						<img src={vb_path + '5.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s4 custom_padding">
+					<div className="col s4 image_wrapper">
 						<img src={vb_path + '6.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s6 custom_padding">
+					<div className="col s6 image_wrapper">
 						<img src={standies_path + '1.png'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s6 custom_padding">
+					<div className="col s6 image_wrapper">
 						<img src={standies_path + '2.png'} className="img-fit-with-width" alt="" />
 					</div>
 				</div>

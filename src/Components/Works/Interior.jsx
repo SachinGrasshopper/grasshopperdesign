@@ -9,9 +9,9 @@ export default function Interior() {
 		<section className="works_sec_container" style={{ paddingTop: '8em' }}>
 			<div className="container">
 				<div className="row no-margin-bottom" style={{ position: 'relative' }}>
-					<div className="col s12 m4 l4 custom_padding hide-on-small-only">
+					<div className="col s12 m4 l4 image_wrapper hide-on-small-only" style={{ position: 'unset' }}>
 						<div
-							className="custom_padding"
+							className="image_wrapper"
 							style={{
 								position: 'absolute',
 								height: '50%',
@@ -34,7 +34,7 @@ export default function Interior() {
 						</div>
 
 						<div
-							className="custom_padding"
+							className="image_wrapper"
 							style={{
 								position: 'absolute',
 								height: '50%',
@@ -47,52 +47,52 @@ export default function Interior() {
 						</div>
 					</div>
 
-					<div className="col s12 hide-on-med-and-up custom_padding">
+					<div className="col s12 hide-on-med-and-up image_wrapper">
 						<h4 className="gh_green_txt font_roboto_slab_bold">3D Interior</h4>
 						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Interior Design</h5>
 					</div>
 
-					<div className="col s12 hide-on-med-and-up custom_padding">
+					<div className="col s12 hide-on-med-and-up image_wrapper">
 						<img src={interior_path + '1.jpeg'} className="img-fit-with-width" alt="" />
 					</div>
 
-					<div className="col s12 m8 l8 custom_padding">
+					<div className="col s12 m8 l8 image_wrapper">
 						<img src={interior_path + '2.jpeg'} className="img-fit-with-width" alt="" />
 					</div>
 				</div>
 
 				<div className="row">
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '3.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '4.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '5.jpg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '6.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '7.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '8.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '9.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '10.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '11.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '12.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
-					<div className="col s12 custom_padding">
+					<div className="col s12 image_wrapper">
 						<img src={interior_path + '13.jpeg'} alt="" className="img-fit-with-width" />
 					</div>
 				</div>
