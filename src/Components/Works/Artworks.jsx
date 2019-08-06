@@ -1,8 +1,8 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import { publicpath } from '../../Helpers/publicpath';
 import { ReactComponent as LoadingSvg } from '../../loading.svg';
 import './works.scss';
-// import Image from '../WorkImages/Image';
+
 const Image = React.lazy(() => import('../WorkImages/Image'));
 
 const art_path = publicpath + '/assets/images/artworks/';

@@ -3,18 +3,18 @@ import './App.scss';
 
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './Components/Home/Home';
+import Home from './Components/Home';
 import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer';
 import CorporateIdentity from './Components/Works/CorporateIdentity';
 import VehicleBranding from './Components/Works/VehicleBranding';
 import Packaging from './Components/Works/Packaging';
 import Posters from './Components/Works/Posters';
 import Artworks from './Components/Works/Artworks';
 import Uiux from './Components/Works/Uiux';
+import Interior from './Components/Works/Interior';
 import MobileNavbar from './Components/Navbar/MobileNavbar';
 import { Transition } from 'react-spring/renderprops';
-import Interior from './Components/Works/Interior';
 
 function App() {
 	const [ state, setstate ] = useState({

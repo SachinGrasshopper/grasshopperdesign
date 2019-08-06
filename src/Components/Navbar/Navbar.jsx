@@ -5,7 +5,7 @@ import './navbar.scss';
 import { publicpath } from '../../Helpers/publicpath';
 
 export default function Navbar({ toggleMobileNavbar }) {
-	const [ state, setstate ] = useState({ showNavDropdown: false });
+	const [ state, setstate ] = useState(false);
 
 	// const navDropdown = () => {
 	// 	if (!state.showNavDropdown) document.removeEventListener('click', outsideNavDropdown);
@@ -21,7 +21,7 @@ export default function Navbar({ toggleMobileNavbar }) {
 					to="/"
 					className="left valign-wrapper"
 					style={{ height: '100%' }}
-					onClick={() => setstate({ ...state, showNavDropdown: !state.showNavDropdown })}
+					onClick={() => state && setstate(false)}
 				>
 					<img
 						src={publicpath + '/assets/images/logo/logo.png'}
@@ -32,20 +32,20 @@ export default function Navbar({ toggleMobileNavbar }) {
 
 				<ul className="nav_menu right hide-on-med-and-down">
 					<li>
-						<NavLink to="/" onClick={() => setstate({ ...state, showNavDropdown: !state.showNavDropdown })}>
+						<NavLink to="/" onClick={() => setstate(false)}>
 							Home
 						</NavLink>
 					</li>
 					<li
 						className="dropdown_btn"
 						onClick={() => {
-							setstate({ ...state, showNavDropdown: !state.showNavDropdown });
+							setstate(!state);
 							// navDropdown();
 						}}
 					>
 						Works
 						<Transition
-							items={state.showNavDropdown}
+							items={state}
 							from={{ opacity: 0, marginTop: -10 }}
 							enter={{ opacity: 1, marginTop: 0 }}
 							leave={{ opacity: 0, marginTop: -10 }}

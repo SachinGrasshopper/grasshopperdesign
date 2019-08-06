@@ -13,15 +13,15 @@ class Home extends React.Component {
 		this.clientImgSliderRef = React.createRef();
 	}
 
-	componentDidMount() {
-		console.log(
-			'width: ',
-			this.clientImgSliderRef.current.clientWidth,
-			' height: ',
-			this.clientImgSliderRef.current.clientHeight
-		);
-		console.log(this.clientImgSliderRef);
-	}
+	// componentDidMount() {
+	// 	console.log(
+	// 		'width: ',
+	// 		this.clientImgSliderRef.current.clientWidth,
+	// 		' height: ',
+	// 		this.clientImgSliderRef.current.clientHeight
+	// 	);
+	// 	console.log(this.clientImgSliderRef);
+	// }
 
 	render() {
 		return (
