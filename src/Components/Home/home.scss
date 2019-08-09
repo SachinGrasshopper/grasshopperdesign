@@ -5,7 +5,7 @@
 		left: 0%;
 	}
 	100% {
-		left: -600%;
+		left: -5171px;
 	}
 }
 
@@ -13,7 +13,7 @@
 	position: absolute;
 	height: 100%;
 	top: 0;
-	animation: infinite_slider 85s linear infinite;
+	// animation: infinite_slider 85s linear infinite;
 
 	&:hover {
 		animation-play-state: paused;

@@ -7,22 +7,6 @@ import { best_at_data } from './home_page_data';
 import ClientImageSlider from './ClientImageSlider';
 
 class Home extends React.Component {
-	constructor() {
-		super();
-
-		this.clientImgSliderRef = React.createRef();
-	}
-
-	// componentDidMount() {
-	// 	console.log(
-	// 		'width: ',
-	// 		this.clientImgSliderRef.current.clientWidth,
-	// 		' height: ',
-	// 		this.clientImgSliderRef.current.clientHeight
-	// 	);
-	// 	console.log(this.clientImgSliderRef);
-	// }
-
 	render() {
 		return (
 			<Fragment>
@@ -47,7 +31,7 @@ class Home extends React.Component {
 										width: '100%'
 									}}
 								>
-									<ClientImageSlider sliderRef={this.clientImgSliderRef} />
+									<ClientImageSlider />
 								</div>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 const client_img_height = '70px';
 
-export const client_images_data2 = [
+export const client_images_data = [
 	{
 		imgname: '1.png',
 		alt: 'Sangeetha'

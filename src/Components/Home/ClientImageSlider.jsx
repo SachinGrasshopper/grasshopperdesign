@@ -1,19 +1,21 @@
 import React from 'react';
-import { client_images_data2 } from './home_page_data';
+import { withSize } from 'react-sizeme';
+import { client_images_data } from './home_page_data';
 import { publicpath } from '../../Helpers/publicpath';
+import { ClientLogoBelt } from '../../StyledComponents/ClientLogoBelt';
 
 class ClientImageSlider extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			slider_left: 0
+			clientLogoBeltWidth: 0
 		};
 	}
 
 	render() {
 		return (
-			<div id="client_belt" ref={this.props.sliderRef} className="valign-wrapper">
-				{client_images_data2.map((e, index) => (
+			<ClientLogoBelt leftSlide={this.props.size.width - 964.36} className="valign-wrapper">
+				{client_images_data.map((e, index) => (
 					<div className="client_images" key={index} style={e.style === undefined ? null : e.style}>
 						<img
 							src={publicpath + '/assets/images/client_logo/' + e.imgname}
@@ -22,9 +24,9 @@ class ClientImageSlider extends React.Component {
 						/>
 					</div>
 				))}
-			</div>
+			</ClientLogoBelt>
 		);
 	}
 }
 
-export default ClientImageSlider;
+export default withSize()(ClientImageSlider);
