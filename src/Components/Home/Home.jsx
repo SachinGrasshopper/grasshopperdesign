@@ -13,8 +13,12 @@ class Home extends React.Component {
 				<section className="sec1">
 					<div className="container sec1_container">
 						<div className="sec1_div">
-							<div className="sec1_graffiti">
-								<p className="no-margin">some masd</p>
+							<div className="sec1_graffiti valign-wrapper">
+								<img
+									src={process.env.PUBLIC_URL + '/assets/images/logo/web_quote.png'}
+									alt=""
+									className="img-fit-with-width"
+								/>
 							</div>
 
 							<div className="no-margin client_icons valign-wrapper">

@@ -37,15 +37,21 @@
 	}
 
 	.sec1_container {
-		height: 100vh;
-		position: relative;
+		// height: 100vh;
+		// position: relative;
+
+		height: calc(100% - 64px);
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 
 		.sec1_div {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			height: 80%;
+			height: 90%;
 			width: 100%;
 			border-radius: 5px;
 			overflow: hidden;
@@ -56,6 +62,7 @@
 				flex-grow: 1;
 				background-color: $primary_black;
 				border-radius: 5px;
+				padding: 3em;
 			}
 
 			.client_icons {
