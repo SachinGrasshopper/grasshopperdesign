@@ -1,6 +1,5 @@
 import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
-import './works.scss';
 
 const vb_path = publicpath + '/assets/images/vehicle_branding/';
 const standies_path = publicpath + '/assets/images/standies/';

@@ -4,16 +4,17 @@ import './App.scss';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './Components/Home';
-import Navbar from './Components/Navbar/Navbar';
+import { Navbar, MobileNavbar } from './Components/Navbar';
 import Footer from './Components/Footer';
-import CorporateIdentity from './Components/Works/CorporateIdentity';
-import VehicleBranding from './Components/Works/VehicleBranding';
-import Packaging from './Components/Works/Packaging';
-import Posters from './Components/Works/Posters';
-import Artworks from './Components/Works/Artworks';
-import Uiux from './Components/Works/Uiux';
-import Interior from './Components/Works/Interior';
-import MobileNavbar from './Components/Navbar/MobileNavbar';
+// import CorporateIdentity from './Components/Works/CorporateIdentity';
+// import VehicleBranding from './Components/Works/VehicleBranding';
+// import Packaging from './Components/Works/Packaging';
+// import Posters from './Components/Works/Posters';
+// import Artworks from './Components/Works/Artworks';
+// import Uiux from './Components/Works/Uiux';
+// import Interior from './Components/Works/Interior';
+import { Artworks, CorporateIdentity, Interior, Packaging, Posters, Uiux, VehicleBranding } from './Components/Works';
+// import MobileNavbar from './Components/Navbar/MobileNavbar';
 import { Transition } from 'react-spring/renderprops';
 
 function App() {

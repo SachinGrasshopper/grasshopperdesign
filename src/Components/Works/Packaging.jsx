@@ -1,6 +1,5 @@
 import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
-import './works.scss';
 
 const pkg_path = publicpath + '/assets/images/packaging/';
 

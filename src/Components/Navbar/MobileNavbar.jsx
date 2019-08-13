@@ -2,7 +2,6 @@ import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
 import { NavLink } from 'react-router-dom';
 
-import './navbar.scss';
 
 export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 	return (

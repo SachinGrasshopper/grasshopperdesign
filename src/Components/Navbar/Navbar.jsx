@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Transition, animated } from 'react-spring/renderprops';
-import './navbar.scss';
 import { publicpath } from '../../Helpers/publicpath';
 
 export default function Navbar({ toggleMobileNavbar }) {

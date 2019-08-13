@@ -59,7 +59,8 @@
 			flex-flow: column;
 
 			.sec1_graffiti {
-				flex-grow: 1;
+				// flex-grow: 1;
+				height: 90%;
 				background-color: $primary_black;
 				border-radius: 5px;
 				padding: 3em;

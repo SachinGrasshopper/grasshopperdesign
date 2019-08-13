@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { publicpath } from '../../Helpers/publicpath';
 import { ReactComponent as LoadingSvg } from '../../loading.svg';
-import './works.scss';
 
 const Image = React.lazy(() => import('../WorkImages/Image'));
 

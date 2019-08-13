@@ -1,6 +1,5 @@
 import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
-import './works.scss';
 
 const corporate_path = publicpath + '/assets/images/corporate_identity/';
 

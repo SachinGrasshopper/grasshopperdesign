@@ -1,6 +1,5 @@
 import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
-import './works.scss';
 
 const poster_path = publicpath + '/assets/images/poster/';
 const standies_path = publicpath + '/assets/images/standies/';

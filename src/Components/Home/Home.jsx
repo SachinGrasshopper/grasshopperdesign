@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import './home.scss';
 
 import { publicpath } from '../../Helpers/publicpath';
 import { best_at_data } from './home_page_data';
@@ -17,7 +16,8 @@ class Home extends React.Component {
 								<img
 									src={process.env.PUBLIC_URL + '/assets/images/logo/web_quote.png'}
 									alt=""
-									className="img-fit-with-width"
+									className="img-fit-with-height"
+									style={{ margin: '0 auto' }}
 								/>
 							</div>
 
