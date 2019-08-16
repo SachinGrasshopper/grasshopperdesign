@@ -13,7 +13,16 @@ import Footer from './Components/Footer';
 // import Artworks from './Components/Works/Artworks';
 // import Uiux from './Components/Works/Uiux';
 // import Interior from './Components/Works/Interior';
-import { Artworks, CorporateIdentity, Interior, Packaging, Posters, Uiux, VehicleBranding } from './Components/Works';
+import {
+	Artworks,
+	CorporateIdentity,
+	Interior,
+	Packaging,
+	Posters,
+	Uiux,
+	VehicleBranding,
+	VisualAds
+} from './Components/Works';
 // import MobileNavbar from './Components/Navbar/MobileNavbar';
 import { Transition } from 'react-spring/renderprops';
 
@@ -61,6 +70,7 @@ function App() {
 				<Route path="/works/artworks" exact component={Artworks} />
 				<Route path="/works/uiux" exact component={Uiux} />
 				<Route path="/works/interiors" exact component={Interior} />
+				<Route path="/works/visualads" exact component={VisualAds} />
 			</Switch>
 
 			<Footer />

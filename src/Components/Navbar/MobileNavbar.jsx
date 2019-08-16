@@ -2,7 +2,6 @@ import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
 import { NavLink } from 'react-router-dom';
 
-
 export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 	return (
 		<div className="mobile_navbar_container hide-on-med-and-up" style={animatedprops}>
@@ -58,6 +57,11 @@ export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 					<li>
 						<NavLink to="/works/interiors" onClick={toggleMobileNavbar}>
 							3D Interior Design
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/works/visualads" onClick={toggleMobileNavbar}>
+							Visual Ads
 						</NavLink>
 					</li>
 				</ul>

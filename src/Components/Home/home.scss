@@ -59,11 +59,16 @@
 			flex-flow: column;
 
 			.sec1_graffiti {
-				// flex-grow: 1;
-				height: 90%;
+				flex-grow: 1;
+				// height: 90%;
 				background-color: $primary_black;
 				border-radius: 5px;
-				padding: 3em;
+				padding: 6em 3em;
+
+				& > img {
+					margin: 0 auto;
+					width: 100%;
+				}
 			}
 
 			.client_icons {
@@ -73,6 +78,7 @@
 				position: relative;
 				flex-wrap: wrap;
 				flex-flow: column;
+				// flex-grow: 1;
 				border-radius: 5px;
 			}
 		}

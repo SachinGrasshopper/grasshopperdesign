@@ -16,8 +16,7 @@ class Home extends React.Component {
 								<img
 									src={process.env.PUBLIC_URL + '/assets/images/logo/web_quote.png'}
 									alt=""
-									className="img-fit-with-height"
-									style={{ margin: '0 auto' }}
+									className={window.innerWidth <= 992 ? 'img-fit-with-width' : 'img-fit-with-height'}
 								/>
 							</div>
 

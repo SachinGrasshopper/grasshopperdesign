@@ -7,5 +7,6 @@ import Packaging from './Packaging';
 import Posters from './Posters';
 import Uiux from './Uiux';
 import VehicleBranding from './VehicleBranding';
+import VisualAds from './VisualAds';
 
-export { Artworks, CorporateIdentity, Interior, Packaging, Posters, Uiux, VehicleBranding };
+export { Artworks, CorporateIdentity, Interior, Packaging, Posters, Uiux, VehicleBranding, VisualAds };
