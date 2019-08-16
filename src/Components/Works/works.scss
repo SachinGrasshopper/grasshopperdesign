@@ -8,3 +8,22 @@
 		left: 0;
 	}
 }
+
+.video_play_btn {
+	// border: 1px solid red;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+
+	& > i.material-icons {
+		text-shadow: 0 0 11px black;
+		font-size: 4em;
+	}
+}
