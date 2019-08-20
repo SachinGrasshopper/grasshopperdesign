@@ -1,8 +1,7 @@
 import React from 'react';
 import { publicpath } from '../../Helpers/publicpath';
 
-// const vb_path = publicpath + '/assets/images/vehicle_branding/';
-const standies_path = publicpath + '/assets/images/standies/';
+const video_cover_pic_path = publicpath + '/assets/images/video_cover_pics/';
 
 class VisualAds extends React.Component {
 	state = {
@@ -56,7 +55,11 @@ class VisualAds extends React.Component {
 											iframeSrc: 'https://www.youtube.com/embed/speJWGacN3k'
 										})}
 								>
-									<img src={standies_path + '3.png'} className="img-fit-with-width" alt="" />
+									<img
+										src={video_cover_pic_path + 'sundaratheeram.jpg'}
+										className="img-fit-with-width"
+										alt=""
+									/>
 									<div className="video_play_btn">
 										<i className="material-icons">play_arrow</i>
 									</div>
@@ -78,7 +81,11 @@ class VisualAds extends React.Component {
 										iframeSrc: 'https://www.youtube.com/embed/speJWGacN3k'
 									})}
 							>
-								<img src={standies_path + '3.png'} className="img-fit-with-width" alt="" />
+								<img
+									src={video_cover_pic_path + 'sundaratheeram.jpg'}
+									className="img-fit-with-width"
+									alt=""
+								/>
 								<div className="video_play_btn">
 									<i className="material-icons">play_arrow</i>
 								</div>
@@ -94,7 +101,11 @@ class VisualAds extends React.Component {
 										iframeSrc: 'https://www.youtube.com/embed/IVGnKwe_SeY'
 									})}
 							>
-								<img src={standies_path + '3.png'} className="img-fit-with-width" alt="" />
+								<img
+									src={video_cover_pic_path + 'sangeetha.jpg'}
+									className="img-fit-with-width"
+									alt=""
+								/>
 								<div className="video_play_btn">
 									<i className="material-icons">play_arrow</i>
 								</div>
