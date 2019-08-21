@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { publicpath } from '../../Helpers/publicpath';
+import { ReactComponent as LoadingSvg } from '../../loading.svg';
+
+const Image = React.lazy(() => import('../WorkImages/Image'));
 
 const video_cover_pic_path = publicpath + '/assets/images/video_cover_pics/';
 
@@ -55,14 +58,16 @@ class VisualAds extends React.Component {
 											iframeSrc: 'https://www.youtube.com/embed/speJWGacN3k'
 										})}
 								>
-									<img
-										src={video_cover_pic_path + 'sundaratheeram.jpg'}
-										className="img-fit-with-width"
-										alt=""
-									/>
-									<div className="video_play_btn">
-										<i className="material-icons">play_arrow</i>
-									</div>
+									<Suspense fallback={<LoadingSvg />}>
+										<Image
+											src={video_cover_pic_path + 'sundaratheeram.jpg'}
+											class="img-fit-with-width"
+										/>
+
+										<div className="video_play_btn">
+											<i className="material-icons">play_arrow</i>
+										</div>
+									</Suspense>
 								</div>
 							</div>
 
@@ -81,14 +86,16 @@ class VisualAds extends React.Component {
 										iframeSrc: 'https://www.youtube.com/embed/speJWGacN3k'
 									})}
 							>
-								<img
-									src={video_cover_pic_path + 'sundaratheeram.jpg'}
-									className="img-fit-with-width"
-									alt=""
-								/>
-								<div className="video_play_btn">
-									<i className="material-icons">play_arrow</i>
-								</div>
+								<Suspense fallback={<LoadingSvg />}>
+									<Image
+										src={video_cover_pic_path + 'sundaratheeram.jpg'}
+										class="img-fit-with-width"
+									/>
+
+									<div className="video_play_btn">
+										<i className="material-icons">play_arrow</i>
+									</div>
+								</Suspense>
 							</div>
 
 							<div
@@ -97,18 +104,38 @@ class VisualAds extends React.Component {
 									this.setState({
 										lightboxShow: true,
 										iframeTitle:
-											'Emotional Corporate Ad | Best post retirement living | Sundaratheeram',
-										iframeSrc: 'https://www.youtube.com/embed/IVGnKwe_SeY'
+											'Animated Introduction Video Ad | Sangeetha Mobiles | Created by Grasshopper Design',
+										iframeSrc: 'https://www.youtube.com/embed/vWhCtPke3yQ'
 									})}
 							>
-								<img
-									src={video_cover_pic_path + 'sangeetha.jpg'}
-									className="img-fit-with-width"
-									alt=""
-								/>
-								<div className="video_play_btn">
-									<i className="material-icons">play_arrow</i>
-								</div>
+								<Suspense fallback={<LoadingSvg />}>
+									<Image src={video_cover_pic_path + 'sangeetha.jpg'} class="img-fit-with-width" />
+
+									<div className="video_play_btn">
+										<i className="material-icons">play_arrow</i>
+									</div>
+								</Suspense>
+							</div>
+						</div>
+
+						<div className="row">
+							<div
+								className="col s12 m6 image_wrapper"
+								onClick={() =>
+									this.setState({
+										lightboxShow: true,
+										iframeTitle:
+											'Real Estate Promotional Video | Sagara Realtors | Created by Grasshopper Design',
+										iframeSrc: 'https://www.youtube.com/embed/-_0KuB3NZnk'
+									})}
+							>
+								<Suspense fallback={<LoadingSvg />}>
+									<Image src={video_cover_pic_path + 'sagara.jpg'} class="img-fit-with-width" />
+
+									<div className="video_play_btn">
+										<i className="material-icons">play_arrow</i>
+									</div>
+								</Suspense>
 							</div>
 						</div>
 					</div>
@@ -127,6 +154,7 @@ class VisualAds extends React.Component {
 						>
 							<i className="material-icons">close</i>
 						</span>
+
 						<div className="youtube_video_wrapper container">
 							<iframe
 								title={this.state.iframeTitle}
