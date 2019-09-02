@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
-import { publicpath } from '../../Helpers/publicpath';
-import { ReactComponent as LoadingSvg } from '../../loading.svg';
+import { publicpath } from '../../../Helpers/publicpath';
+import { ReactComponent as LoadingSvg } from '../../../loading.svg';
 
-const Image = React.lazy(() => import('../WorkImages/Image'));
+const Image = React.lazy(() => import('../../WorkImages/Image'));
 
 const video_cover_pic_path = publicpath + '/assets/images/video_cover_pics/';
 

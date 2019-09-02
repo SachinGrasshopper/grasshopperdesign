@@ -1,5 +1,5 @@
 import React from 'react';
-import { publicpath } from '../../Helpers/publicpath';
+import { publicpath } from '../../../Helpers/publicpath';
 
 const pkg_path = publicpath + '/assets/images/packaging/';
 
@@ -22,7 +22,7 @@ export default function Packaging() {
 							}}
 						>
 							<div style={{ width: '100%' }}>
-								<h4 className="gh_green_txt font_roboto_slab_bold">Packaging</h4>
+								<h4 className="gh_green_txt font_roboto_slab_bold">Food & Beverages Packaging</h4>
 								<h5
 									className="gh_secondary_black_txt font_roboto_slab_bold"
 									style={{ wordBreak: 'break-word' }}
@@ -47,7 +47,7 @@ export default function Packaging() {
 					</div>
 
 					<div className="col s12 hide-on-med-and-up image_wrapper">
-						<h4 className="gh_green_txt font_roboto_slab_bold">Packaging</h4>
+						<h4 className="gh_green_txt font_roboto_slab_bold">Food & Beverages Packaging</h4>
 						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Box / Label / Pouch / Stickers</h5>
 					</div>
 

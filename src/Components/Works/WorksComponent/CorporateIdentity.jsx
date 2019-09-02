@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
-import { publicpath } from '../../Helpers/publicpath';
-import { ReactComponent as LoadingSvg } from '../../loading.svg';
+import { publicpath } from '../../../Helpers/publicpath';
+import { ReactComponent as LoadingSvg } from '../../../loading.svg';
 
-const Image = React.lazy(() => import('../WorkImages/Image'));
+const Image = React.lazy(() => import('../../WorkImages/Image'));
 
 const corporate_path = publicpath + '/assets/images/corporate_identity/';
 
@@ -25,7 +25,7 @@ export default function CorporateIdentity() {
 							}}
 						>
 							<div>
-								<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
+								<h4 className="gh_green_txt font_roboto_slab_bold">Design & Visualization</h4>
 								<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Corporate Identity</h5>
 							</div>
 						</div>
@@ -47,7 +47,7 @@ export default function CorporateIdentity() {
 					</div>
 
 					<div className="col s12 hide-on-med-and-up image_wrapper">
-						<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
+						<h4 className="gh_green_txt font_roboto_slab_bold">Design & Visualization</h4>
 						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Corporate Identity</h5>
 					</div>
 

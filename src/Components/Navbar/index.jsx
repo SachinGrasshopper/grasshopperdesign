@@ -1,5 +1,4 @@
-import './navbar.scss'
-import Navbar from './Navbar';
-import MobileNavbar from './MobileNavbar';
+import './Styles/navbar.scss';
 
-export { Navbar, MobileNavbar };
+export { default as Navbar } from './NavbarComponent/Navbar';
+export { default as MobileNavbar } from './NavbarComponent/MobileNavbar';

@@ -194,5 +194,9 @@ export const best_at_data = [
 	{
 		img: 'ux_ui.png',
 		name: 'UI/UX Design'
+	},
+	{
+		img: '3d.png',
+		name: '3D'
 	}
 ];

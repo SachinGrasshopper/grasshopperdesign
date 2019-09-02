@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Transition, animated } from 'react-spring/renderprops';
-import { publicpath } from '../../Helpers/publicpath';
+import { publicpath } from '../../../Helpers/publicpath';
 
 export default function Navbar({ toggleMobileNavbar }) {
 	const [ state, setstate ] = useState(false);
@@ -33,6 +33,11 @@ export default function Navbar({ toggleMobileNavbar }) {
 					<li>
 						<NavLink to="/" onClick={() => setstate(false)}>
 							Home
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/team" onClick={() => setstate(false)}>
+							Team
 						</NavLink>
 					</li>
 					<li

@@ -1,5 +1,5 @@
 import React from 'react';
-import { publicpath } from '../../Helpers/publicpath';
+import { publicpath } from '../../../Helpers/publicpath';
 import { NavLink } from 'react-router-dom';
 
 export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
@@ -22,6 +22,11 @@ export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 					<li>
 						<NavLink to="/" onClick={toggleMobileNavbar}>
 							Home
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/team" onClick={toggleMobileNavbar}>
+							Team
 						</NavLink>
 					</li>
 					<li>

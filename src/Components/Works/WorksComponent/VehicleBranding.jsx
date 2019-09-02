@@ -1,5 +1,5 @@
 import React from 'react';
-import { publicpath } from '../../Helpers/publicpath';
+import { publicpath } from '../../../Helpers/publicpath';
 
 const vb_path = publicpath + '/assets/images/vehicle_branding/';
 const standies_path = publicpath + '/assets/images/standies/';
@@ -24,9 +24,7 @@ export default function VehicleBranding() {
 						>
 							<div>
 								<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
-								<h5 className="gh_secondary_black_txt font_roboto_slab_bold">
-									Vehicle Branding / Standees
-								</h5>
+								<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Posters</h5>
 							</div>
 						</div>
 
@@ -46,7 +44,7 @@ export default function VehicleBranding() {
 
 					<div className="col s12 hide-on-med-and-up image_wrapper">
 						<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
-						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Corporate Identity</h5>
+						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Posters</h5>
 					</div>
 
 					<div className="col s12 hide-on-med-and-up image_wrapper">

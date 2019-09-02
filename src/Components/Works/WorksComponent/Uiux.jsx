@@ -1,5 +1,5 @@
 import React from 'react';
-import { publicpath } from '../../Helpers/publicpath';
+import { publicpath } from '../../../Helpers/publicpath';
 
 const uiux_path = publicpath + '/assets/images/websites/';
 

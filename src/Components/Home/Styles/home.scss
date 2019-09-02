@@ -1,4 +1,4 @@
-@import '../../Styles/variables';
+@import '../../../Styles/variables';
 
 @keyframes infinite_slider {
 	0% {
@@ -60,14 +60,15 @@
 
 			.sec1_graffiti {
 				flex-grow: 1;
-				// height: 90%;
+				max-height: calc(100% - 10em);
 				background-color: $primary_black;
 				border-radius: 5px;
-				padding: 6em 3em;
+				padding: 3em 3em;
+				justify-content: center;
 
-				& > img {
-					margin: 0 auto;
-					max-width: 100%;
+				.web_quote_img_wrapper {
+					justify-content: center;
+					width: 75%;
 				}
 			}
 
@@ -78,7 +79,6 @@
 				position: relative;
 				flex-wrap: wrap;
 				flex-flow: column;
-				// flex-grow: 1;
 				border-radius: 5px;
 			}
 		}
@@ -215,5 +215,15 @@
 
 	.sec1 > .sec1_container > .sec1_div > .client_icons {
 		padding: 0 3em 0 3em;
+	}
+
+	.web_quote_img_wrapper {
+		width: unset !important;
+	}
+}
+
+@media #{$medium} {
+	.web_quote_img_wrapper {
+		width: unset !important;
 	}
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { withSize } from 'react-sizeme';
-import { client_images_data } from './home_page_data';
-import { publicpath } from '../../Helpers/publicpath';
-import { ClientLogoBelt } from '../../StyledComponents/ClientLogoBelt';
+import { client_images_data } from '../home_page_data';
+import { publicpath } from '../../../Helpers/publicpath';
+import { ClientLogoBelt } from '../../../StyledComponents';
 
 class ClientImageSlider extends React.Component {
 	constructor(props) {

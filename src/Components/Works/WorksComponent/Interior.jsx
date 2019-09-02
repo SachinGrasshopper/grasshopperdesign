@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react';
-import { publicpath } from '../../Helpers/publicpath';
-import { ReactComponent as LoadingSvg } from '../../loading.svg';
+import { publicpath } from '../../../Helpers/publicpath';
+import { ReactComponent as LoadingSvg } from '../../../loading.svg';
 
-const Image = React.lazy(() => import('../WorkImages/Image'));
+const Image = React.lazy(() => import('../../WorkImages/Image'));
 
-const art_path = publicpath + '/assets/images/artworks/';
+const interior_path = publicpath + '/assets/images/interiors/';
 
-export default function Artworks() {
+export default function Interior() {
 	return (
 		<section className="works_sec_container" style={{ paddingTop: '8em' }}>
 			<div className="container">
@@ -25,7 +25,7 @@ export default function Artworks() {
 							}}
 						>
 							<div style={{ width: '100%' }}>
-								<h4 className="gh_green_txt font_roboto_slab_bold">Artworks</h4>
+								<h4 className="gh_green_txt font_roboto_slab_bold">Branding</h4>
 								<h5
 									className="gh_secondary_black_txt font_roboto_slab_bold"
 									style={{ wordBreak: 'break-word' }}
@@ -46,93 +46,83 @@ export default function Artworks() {
 							}}
 						>
 							<Suspense fallback={<LoadingSvg />}>
-								<Image src={art_path + '8.png'} class="img-fit-with-width" />
+								<Image src={interior_path + '1.jpeg'} class="img-fit-with-width" />
 							</Suspense>
 						</div>
 					</div>
 
 					<div className="col s12 hide-on-med-and-up image_wrapper">
-						<h4 className="gh_green_txt font_roboto_slab_bold">Artworks</h4>
-						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Posters</h5>
+						<h4 className="gh_green_txt font_roboto_slab_bold">3D Interior</h4>
+						<h5 className="gh_secondary_black_txt font_roboto_slab_bold">Interior Design</h5>
 					</div>
 
 					<div className="col s12 hide-on-med-and-up image_wrapper">
 						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '8.png'} class="img-fit-with-width" />
+							<Image src={interior_path + '1.jpeg'} class="img-fit-with-width" />
 						</Suspense>
 					</div>
 
 					<div className="col s12 m8 l8 image_wrapper">
 						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '9.png'} class="img-fit-with-width" />
+							<Image src={interior_path + '2.jpeg'} class="img-fit-with-width" />
 						</Suspense>
 					</div>
 				</div>
 
 				<div className="row">
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '1.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '2.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '3.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '4.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '5.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '6.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '10.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '11.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '12.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
-					<div className="col s6 image_wrapper">
-						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '13.png'} class="img-fit-with-width" />
-						</Suspense>
-					</div>
-
 					<div className="col s12 image_wrapper">
 						<Suspense fallback={<LoadingSvg />}>
-							<Image src={art_path + '7.png'} class="img-fit-with-width" />
+							<Image src={interior_path + '3.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '4.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '5.jpg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '6.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '7.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '8.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '9.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '10.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '11.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '12.jpeg'} class="img-fit-with-width" />
+						</Suspense>
+					</div>
+					<div className="col s12 image_wrapper">
+						<Suspense fallback={<LoadingSvg />}>
+							<Image src={interior_path + '13.jpeg'} class="img-fit-with-width" />
 						</Suspense>
 					</div>
 				</div>

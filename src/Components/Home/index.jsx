@@ -1,3 +1,3 @@
-import './home.scss'
+import './Styles/home.scss';
 
-export { default } from './Home';
+export { default } from './HomeComponent/Home';

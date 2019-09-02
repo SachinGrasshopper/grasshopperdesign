@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { publicpath } from '../../Helpers/publicpath';
-import { best_at_data } from './home_page_data';
+import { publicpath } from '../../../Helpers/publicpath';
+import { best_at_data } from '../home_page_data';
 import ClientImageSlider from './ClientImageSlider';
 
 class Home extends React.Component {
@@ -13,11 +13,13 @@ class Home extends React.Component {
 					<div className="container sec1_container">
 						<div className="sec1_div">
 							<div className="sec1_graffiti valign-wrapper">
-								<img
-									src={process.env.PUBLIC_URL + '/assets/images/logo/web_quote.png'}
-									alt=""
-									className={window.innerWidth <= 992 ? 'img-fit-with-width' : 'img-fit-with-height'}
-								/>
+								<div className="valign-wrapper web_quote_img_wrapper">
+									<img
+										src={process.env.PUBLIC_URL + '/assets/images/logo/web_quote.png'}
+										alt=""
+										className="responsive-img"
+									/>
+								</div>
 							</div>
 
 							<div className="no-margin client_icons valign-wrapper">
