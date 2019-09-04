@@ -25,7 +25,7 @@ export default function Navbar({ toggleMobileNavbar }) {
 					<img
 						src={publicpath + '/assets/images/logo/logo.png'}
 						alt="Company Logo"
-						style={{ width: '100px' }}
+						style={{ width: '90px' }}
 					/>
 				</NavLink>
 

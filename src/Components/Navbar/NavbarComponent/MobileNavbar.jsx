@@ -13,7 +13,7 @@ export default function MobileNavbar({ toggleMobileNavbar, animatedprops }) {
 				<img
 					src={publicpath + '/assets/images/logo/logo.png'}
 					alt="Grasshopperdesign Pvt Ltd"
-					style={{ width: '120px' }}
+					style={{ width: '90px' }}
 				/>
 			</div>
 

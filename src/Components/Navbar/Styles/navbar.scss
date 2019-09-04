@@ -60,6 +60,7 @@ ul.nav_dropdown {
 	z-index: 10;
 	display: flex;
 	flex-flow: column;
+	overflow: scroll;
 
 	.menu_links {
 		flex-grow: 1;
