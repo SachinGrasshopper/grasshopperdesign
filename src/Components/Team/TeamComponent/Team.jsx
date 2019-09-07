@@ -12,7 +12,10 @@ function Team() {
 			<div className="container-fluid" style={{ backgroundColor: '#ececec', padding: '3.5em 0' }}>
 				<h2 className="gh_green_txt center font_roboto_condensed">Meet the Insects</h2>
 
-				<div className="center font_roboto_condensed" style={{ maxWidth: '400px', margin: '0 auto' }}>
+				<div
+					className="center font_roboto_condensed"
+					style={{ maxWidth: '400px', margin: '0 auto', padding: '0 15px' }}
+				>
 					<p>
 						We Grasshopper is a multidisciplinary team of Visual Designers, Web Designers and Brand
 						Strategists. We are collaborative, flexible, responsive, passionate and grounded in nature. We

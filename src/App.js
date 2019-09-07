@@ -44,11 +44,13 @@ function App() {
 					show &&
 					((props) => (
 						<MobileNavbar
-							toggleMobileNavbar={() =>
+							toggleMobileNavbar={() => {
 								setstate({
 									...state,
 									showMobileNavbar: !state.showMobileNavbar
-								})}
+								});
+								window.scrollTo(0, 0);
+							}}
 							animatedprops={props}
 						/>
 					))}

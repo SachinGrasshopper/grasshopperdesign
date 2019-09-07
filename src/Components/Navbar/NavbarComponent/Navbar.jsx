@@ -13,6 +13,10 @@ export default function Navbar({ toggleMobileNavbar }) {
 
 	// const outsideNavDropdown = () => navDropdown();
 
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
+
 	return (
 		<nav>
 			<div className="container" style={{ height: 'inherit' }}>
@@ -29,14 +33,26 @@ export default function Navbar({ toggleMobileNavbar }) {
 					/>
 				</NavLink>
 
-				<ul className="nav_menu right hide-on-med-and-down">
+				<ul className="nav_menu right hide-on-small-only">
 					<li>
-						<NavLink to="/" onClick={() => setstate(false)}>
+						<NavLink
+							to="/"
+							onClick={() => {
+								setstate(false);
+								scrollToTop();
+							}}
+						>
 							Home
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/team" onClick={() => setstate(false)}>
+						<NavLink
+							to="/team"
+							onClick={() => {
+								setstate(false);
+								scrollToTop();
+							}}
+						>
 							Team
 						</NavLink>
 					</li>
@@ -60,28 +76,44 @@ export default function Navbar({ toggleMobileNavbar }) {
 									<animated.div style={props}>
 										<ul className="nav_dropdown">
 											<li>
-												<NavLink to="/works/corporateidentity">Corporate Identity</NavLink>
+												<NavLink to="/works/corporateidentity" onClick={() => scrollToTop()}>
+													Corporate Identity
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/vehiclebranding">Vehicle Branding</NavLink>
+												<NavLink to="/works/vehiclebranding" onClick={() => scrollToTop()}>
+													Vehicle Branding
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/packaging">Packaging</NavLink>
+												<NavLink to="/works/packaging" onClick={() => scrollToTop()}>
+													Packaging
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/posters">Posters</NavLink>
+												<NavLink to="/works/posters" onClick={() => scrollToTop()}>
+													Posters
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/artworks">Artworks</NavLink>
+												<NavLink to="/works/artworks" onClick={() => scrollToTop()}>
+													Artworks
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/uiux">UIUX</NavLink>
+												<NavLink to="/works/uiux" onClick={() => scrollToTop()}>
+													UIUX
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/interiors">3D Interior Design</NavLink>
+												<NavLink to="/works/interiors" onClick={() => scrollToTop()}>
+													3D Interior Design
+												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/works/visualads">Visual Ads</NavLink>
+												<NavLink to="/works/visualads" onClick={() => scrollToTop()}>
+													Visual Ads
+												</NavLink>
 											</li>
 										</ul>
 									</animated.div>

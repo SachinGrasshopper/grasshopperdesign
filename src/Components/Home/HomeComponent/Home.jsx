@@ -46,6 +46,7 @@ class Home extends React.Component {
 				<section className="sec2">
 					<video
 						src={publicpath + '/assets/videos/video.mp4'}
+						poster={'/assets/images/video_cover_pics/playback_poster.jpg'}
 						autoPlay
 						muted
 						loop
@@ -120,14 +121,14 @@ class Home extends React.Component {
 					<div className="sec4_div">
 						<div className="container">
 							<div className="row">
-								<div className="col s12 m6 l4">
+								<div className="col s12 m4 l4">
 									<h6>MISSION</h6>
 									<p className="no-margin-top">
 										We value the power of simplicity stripping away the clutter to create immersive
 										sensory experiences.
 									</p>
 								</div>
-								<div className="col s12 m6 l4">
+								<div className="col s12 m4 l4">
 									<h6>VISSION</h6>
 									<p>
 										It’s important to make a good first impression and hopefully a lasting one too!
@@ -136,7 +137,7 @@ class Home extends React.Component {
 									</p>
 									<p className="no-margin-top">Do excellent work for excellent people…</p>
 								</div>
-								<div className="col s12 m12 l4">
+								<div className="col s12 m4 l4">
 									<h6>APPROACH</h6>
 									<p>
 										We appreciate that every client and project is unique and a one size fits all
