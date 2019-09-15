@@ -8,7 +8,7 @@ const art_path = publicpath + '/assets/images/artworks/';
 
 export default function Artworks() {
 	return (
-		<section className="works_sec_container" style={{ paddingTop: '8em' }}>
+		<section className="works_sec_container">
 			<div className="container">
 				<div className="row no-margin-bottom" style={{ position: 'relative' }}>
 					<div className="col s12 m4 l4 image_wrapper hide-on-small-only" style={{ position: 'unset' }}>

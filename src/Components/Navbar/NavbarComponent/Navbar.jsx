@@ -62,6 +62,7 @@ export default function Navbar({ toggleMobileNavbar }) {
 							setstate(!state);
 							// navDropdown();
 						}}
+						style={{ color: 'white' }}
 					>
 						Works
 						<Transition
