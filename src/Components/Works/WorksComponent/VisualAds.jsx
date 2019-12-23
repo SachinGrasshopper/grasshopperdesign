@@ -16,7 +16,7 @@ class VisualAds extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<section className="works_sec_container">
+				<section onContextMenu={(e)=> e.preventDefault()} className="works_sec_container">
 					<div className="container">
 						<div className="row no-margin-bottom" style={{ position: 'relative' }}>
 							<div

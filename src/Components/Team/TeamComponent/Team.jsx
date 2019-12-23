@@ -8,8 +8,8 @@ function Team() {
 	const [ emp_popup, setEmp_popup ] = useState(null);
 
 	return (
-		<React.Fragment>
-			<div className="container-fluid" style={{ backgroundColor: '#ececec', padding: '3.5em 0' }}>
+		<React.Fragment onContextMenu={(e)=> e.preventDefault()}>
+			<div onContextMenu={(e)=> e.preventDefault()} className="container-fluid" style={{ backgroundColor: '#ececec', padding: '3.5em 0' }}>
 				<h2 className="gh_green_txt center font_roboto_condensed">Meet the Insects</h2>
 
 				<div
@@ -61,7 +61,7 @@ function Team() {
 				</div>
 			</div>
 
-			<div className="container-fluid" style={{ backgroundColor: '#fff' }}>
+			<div onContextMenu={(e)=> e.preventDefault()} className="container-fluid" style={{ backgroundColor: '#fff' }}>
 				<div className="employees container">
 					<EmployeeCard imgName="emp_sasikumar" empName="Sasikumar N" empDesignation="Director" />
 
@@ -94,8 +94,8 @@ function Team() {
 					/>
 				</div>
 
-				<div className="employees container">
-					<EmployeeCard
+				<div onContextMenu={(e)=> e.preventDefault()} className="employees container">
+					{/* <EmployeeCard
 						imgName="emp_haneef"
 						empName="Haneef Muhammad"
 						empDesignation="Manager Finance & Operations"
@@ -105,7 +105,7 @@ function Team() {
 							setpopup(true);
 							setEmp_popup(empName);
 						}}
-					/>
+					/> */}
 
 					<EmployeeCard imgName="emp_sachin" empName="Sachin S Nair" empDesignation="Web Developer" />
 
@@ -116,7 +116,7 @@ function Team() {
 
 				<hr className="card_divider" />
 
-				<div className="employees container">
+				<div onContextMenu={(e)=> e.preventDefault()} className="employees container">
 					<EmployeeCard
 						imgName="emp_shadow"
 						empName="Shadow"

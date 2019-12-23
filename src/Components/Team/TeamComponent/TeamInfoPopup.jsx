@@ -6,7 +6,7 @@ const svgPath = '/assets/images/team';
 
 function TeamInfoPopup(props) {
 	return (
-		<Lightbox>
+		<Lightbox onContextMenu={(e)=> e.preventDefault()}>
 			<div className="t_member_container">
 				<div className="t_member_row row no-margin">
 					<span className="valign_wrapper t_member_close" onClick={props.closeTeamPopup}>

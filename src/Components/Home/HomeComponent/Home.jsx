@@ -8,8 +8,8 @@ import ClientImageSlider from './ClientImageSlider';
 class Home extends React.Component {
 	render() {
 		return (
-			<Fragment>
-				<section className="sec1">
+			<Fragment onContextMenu={(e)=> e.preventDefault()}>
+				<section onContextMenu={(e)=> e.preventDefault()} className="sec1">
 					<div className="container sec1_container">
 						<div className="sec1_div">
 							<div className="sec1_graffiti valign-wrapper">
@@ -43,7 +43,7 @@ class Home extends React.Component {
 					</div>
 				</section>
 
-				<section className="sec2">
+				<section onContextMenu={(e)=> e.preventDefault()} className="sec2">
 					<video
 						src={publicpath + '/assets/videos/video.mp4'}
 						poster={'/assets/images/video_cover_pics/playback_poster.jpg'}
@@ -77,7 +77,7 @@ class Home extends React.Component {
 					</div>
 				</section>
 
-				<section className="sec3">
+				<section onContextMenu={(e)=> e.preventDefault()} className="sec3">
 					<div className="container">
 						<img
 							src={publicpath + '/assets/images/logo/namaste.png'}
@@ -114,7 +114,7 @@ class Home extends React.Component {
 					</div>
 				</section>
 
-				<section
+				<section onContextMenu={(e)=> e.preventDefault()}
 					className="sec4"
 					style={{ backgroundImage: `url(${publicpath}/assets/images/logo/mission_bg.png)` }}
 				>
@@ -154,7 +154,7 @@ class Home extends React.Component {
 					</div>
 				</section>
 
-				<section className="sec5">
+				<section onContextMenu={(e)=> e.preventDefault()} className="sec5">
 					<div className="container">
 						<p className="center">
 							We create immersive sensory experiences across any design industry. Our eye for up to date

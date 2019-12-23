@@ -5,7 +5,7 @@ import { publicpath } from '../../Helpers/publicpath';
 
 export default function Footer() {
 	return (
-		<div className="footer_container">
+		<div onContextMenu={(e)=> e.preventDefault()} className="footer_container">
 			<div className="container">
 				<h5 style={{ color: '#95d600', fontWeight: 'bold' }} className="center">
 					Contact with us
@@ -45,7 +45,9 @@ export default function Footer() {
 							</p>
 							<hr style={{ border: '2px solid #95d600', width: '50px', margin: '5px 0 0 0' }} />
 						</div>
-						<p className="gh_secondary_black_txt">info@grasshopperdesign.in</p>
+						<p className="gh_secondary_black_txt">
+						<a href="mailto:info@grasshopperdesign.in" style={{color: '#707070'}}>info@grasshopperdesign.in</a>
+							</p>
 					</div>
 
 					<div className="follow_sec">
@@ -58,31 +60,31 @@ export default function Footer() {
 
 						<div style={{ display: 'flex', margin: '1em 0 0 -1em' }}>
 							<div className="social_links">
-								<NavLink to="/">
+								<a href="https://www.facebook.com/GrasshopperDesign.Pvt.Ltd/">
 									<img
 										className="img-fit-with-height"
 										src={publicpath + '/assets/images/logo/gh_facebook.png'}
 										alt="GrasshopperDesign Pvt. Ltd. Facebook"
 									/>
-								</NavLink>
+								</a>
 							</div>
 							<div className="social_links">
-								<NavLink to="/">
+								<a href="https://www.instagram.com/grasshopper_design/?hl=en">
 									<img
 										className="img-fit-with-height"
 										src={publicpath + '/assets/images/logo/gh_insta.png'}
 										alt="GrasshopperDesign Pvt. Ltd. Instagram"
 									/>
-								</NavLink>
+								</a>
 							</div>
 							<div className="social_links">
-								<NavLink to="/">
+								<a href="https://www.linkedin.com/company/grasshopper-design/">
 									<img
 										className="img-fit-with-height"
 										src={publicpath + '/assets/images/logo/gh_linkedin.png'}
 										alt="GrasshopperDesign Pvt. Ltd. LinkedIn"
 									/>
-								</NavLink>
+								</a>
 							</div>
 						</div>
 					</div>

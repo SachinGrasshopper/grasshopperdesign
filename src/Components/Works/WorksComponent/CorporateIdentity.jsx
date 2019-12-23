@@ -8,8 +8,8 @@ const corporate_path = publicpath + '/assets/images/corporate_identity/';
 
 export default function CorporateIdentity() {
 	return (
-		<section className="works_sec_container">
-			<div className="container">
+		<section onContextMenu={(e)=> e.preventDefault()} className="works_sec_container">
+			<div onContextMenu={(e)=> e.preventDefault()} className="container">
 				<div className="row no-margin-bottom" style={{ position: 'relative' }}>
 					<div className="col s12 m4 l4 image_wrapper hide-on-small-only" style={{ position: 'unset' }}>
 						<div

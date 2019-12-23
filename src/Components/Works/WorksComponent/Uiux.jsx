@@ -5,7 +5,7 @@ const uiux_path = publicpath + '/assets/images/websites/';
 
 export default function Uiux() {
 	return (
-		<section className="works_sec_container">
+		<section onContextMenu={(e)=> e.preventDefault()} className="works_sec_container">
 			<div className="container">
 				<div className="row no-margin-bottom" style={{ position: 'relative' }}>
 					<div className="col s12 m4 l4 image_wrapper hide-on-small-only">
@@ -56,6 +56,14 @@ export default function Uiux() {
 
 					<div className="col s12 m6 image_wrapper">
 						<img src={uiux_path + '3.png'} alt="" className="img-fit-with-width" />
+					</div>
+
+					<div className="col s12 m6 image_wrapper">
+						<img src={uiux_path + '4.png'} alt="" className="img-fit-with-width" />
+					</div>
+
+					<div className="col s12 m6 image_wrapper">
+						<img src={uiux_path + '5.png'} alt="" className="img-fit-with-width" />
 					</div>
 				</div>
 			</div>

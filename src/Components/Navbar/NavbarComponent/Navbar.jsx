@@ -18,7 +18,7 @@ export default function Navbar({ toggleMobileNavbar }) {
 	};
 
 	return (
-		<nav>
+		<nav onContextMenu={(e)=> e.preventDefault()}>
 			<div className="container" style={{ height: 'inherit' }}>
 				<NavLink
 					to="/"
