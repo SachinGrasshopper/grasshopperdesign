@@ -109,9 +109,15 @@ function Team() {
 
 					<EmployeeCard imgName="emp_sachin" empName="Sachin S Nair" empDesignation="Web Developer" />
 
-					<EmployeeCard empName="Achuthananda Varma" empDesignation="VFX Artist" />
+					<EmployeeCard 
+					imgName="emp_achu" 
+					empName="Achuthananda Varma" 
+					empDesignation="VFX Artist" />
 
-					<EmployeeCard empName="Althaf Ahammed K" empDesignation="Jr. Graphic Designer" />
+					<EmployeeCard
+					imgName="emp_althaf"
+					 empName="Althaf Ahammed K" 
+					 empDesignation="Jr. Graphic Designer" />
 				</div>
 
 				<hr className="card_divider" />
