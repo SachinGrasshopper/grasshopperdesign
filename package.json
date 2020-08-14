@@ -12,6 +12,7 @@
 		"react-scripts": "^3.3.0",
 		"react-sizeme": "^2.6.10",
 		"react-spring": "^8.0.27",
+		"run-scripts": "^0.4.0",
 		"styled-components": "^4.4.1"
 	},
 	"scripts": {

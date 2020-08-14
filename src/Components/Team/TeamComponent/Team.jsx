@@ -110,9 +110,9 @@ function Team() {
 					<EmployeeCard imgName="emp_sachin" empName="Sachin S Nair" empDesignation="Web Developer" />
 
 					<EmployeeCard 
-					imgName="emp_achu" 
-					empName="Achuthananda Varma" 
-					empDesignation="VFX Artist" />
+					imgName="emp_divya" 
+					empName="Divya Rani EP" 
+					empDesignation="Financial Lead" />
 
 					<EmployeeCard
 					imgName="emp_althaf"
