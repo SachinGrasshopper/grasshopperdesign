@@ -105,7 +105,7 @@ function Team() {
 							setpopup(true);
 							setEmp_popup(empName);
 						}}
-					/> */}
+					/> }
 
 					<EmployeeCard imgName="emp_sachin" empName="Sachin S Nair" empDesignation="Web Developer" />
 
@@ -118,6 +118,7 @@ function Team() {
 					imgName="emp_althaf"
 					 empName="Althaf Ahammed K" 
 					 empDesignation="Jr. Graphic Designer" />
+					*/}
 				</div>
 
 				<hr className="card_divider" />
